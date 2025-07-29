@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Quiz Game</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="quiz.css">
+   
+    
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Quiz Game</h1>
+            <div class="theme-selector">
+                <button class="theme-btn default-theme" onclick="setTheme('default')">Default</button>
+                <button class="theme-btn dark-theme-btn" onclick="setTheme('dark')">Dark</button>
+                <!-- <button class="theme-btn nature-theme-btn" onclick="setTheme('nature')">Nature</button> -->
+            </div>
+        </header>
+
+        <div class="quiz-container">
+            <div class="progress-bar">
+                <div class="progress" id="progress"></div>
+            </div>
+
+            <div id="question-container">
+                <!-- Questions will be inserted here -->
+            </div>
+
+            <div class="navigation">
+                <button class="btn" id="prev-btn" disabled>Previous</button>
+                <button class="btn" id="next-btn">Next</button>
+            </div>
+        </div>
+
+        <div class="result-container" id="result-container">
+            <h2>Quiz Completed!</h2>
+            <div class="score" id="score">0%</div>
+            <button class="btn restart-btn" id="restart-btn">Restart Quiz</button>
+        </div>
+    </div>
+    <script src="quiz.js"></script>
+
+    
+</body>
+</html>
